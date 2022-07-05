@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Gumbo\Conscribo\Tests;
 
 use Gumbo\Conscribo\ConscriboServiceProvider;
