@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Gumbo\Conscribo
+user-auth-provider: App\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Gumbo\Conscribo\Console
+
+model:
+  namespace: Gumbo\Conscribo
+
+provider:
+  namespace: Gumbo\Conscribo\Providers
+
+testing:
+  namespace: Gumbo\Conscribo\Tests
