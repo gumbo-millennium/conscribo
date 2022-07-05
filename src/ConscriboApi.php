@@ -1,6 +1,6 @@
 <?php
 
-namespace Gumbo\ConscriboApi;
+namespace Gumbo\Conscribo;
 
 class ConscriboApi
 {

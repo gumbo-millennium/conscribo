@@ -1,8 +1,8 @@
 <?php
 
-namespace Gumbo\ConscriboApi\Tests;
+namespace Gumbo\Conscribo\Tests;
 
-use Gumbo\ConscriboApi\ConscriboApiServiceProvider;
+use Gumbo\Conscribo\ConscriboServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Gumbo\\ConscriboApi\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Gumbo\\Conscribo\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            ConscriboApiServiceProvider::class,
+            ConscriboServiceProvider::class,
         ];
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Gumbo\ConscriboApi\Commands;
+namespace Gumbo\Conscribo\Commands;
 
 use Illuminate\Console\Command;
 

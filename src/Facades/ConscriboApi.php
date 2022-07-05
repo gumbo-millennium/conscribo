@@ -1,11 +1,11 @@
 <?php
 
-namespace Gumbo\ConscriboApi\Facades;
+namespace Gumbo\Conscribo\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Gumbo\ConscriboApi\ConscriboApi
+ * @see \Gumbo\Conscribo\ConscriboApi
  */
 class ConscriboApi extends Facade
 {
