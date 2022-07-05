@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Gumbo\ConscriboApi\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class ConscriboApiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'conscribo-api';
 
     public $description = 'My command';
 
