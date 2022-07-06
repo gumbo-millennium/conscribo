@@ -27,6 +27,9 @@ return (new PhpCsFixer\Config())
             'statements' => ['break', 'continue', 'declare', 'return', 'throw', 'try'],
         ],
         'phpdoc_single_line_var_spacing' => true,
+        'php_unit_method_casing' => [
+            'case' => 'snake_case',
+        ],
         'phpdoc_var_without_name' => true,
         'class_attributes_separation' => [
             'elements' => [
