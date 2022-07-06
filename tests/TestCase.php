@@ -31,7 +31,7 @@ abstract class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_conscribo-api_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_conscribo_table.php.stub';
         $migration->up();
         */
     }

@@ -1,12 +1,12 @@
 {
-    "name": "gumbo-millennium/conscribo-api",
+    "name": "gumbo-millennium/conscribo",
     "description": "Easy-to-use Conscribo API usage for membership sync",
     "keywords": [
         "gumbo-millennium",
         "laravel",
-        "conscribo-api"
+        "conscribo"
     ],
-    "homepage": "https://github.com/gumbo-millennium/conscribo-api",
+    "homepage": "https://github.com/gumbo-millennium/conscribo",
     "license": "MIT",
     "authors": [
         {

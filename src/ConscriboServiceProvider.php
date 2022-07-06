@@ -19,8 +19,8 @@ class ConscriboServiceProvider extends ServiceProvider
         // Publish certain assets
         if ($this->app->runningInConsole()) {
             $this->publishes([
-        __DIR__.'/../config/conscribo.php' => config_path('conscribo.php'),
-        ], 'conscribo-api-config');
+                __DIR__.'/../config/conscribo.php' => config_path('conscribo.php'),
+            ], 'conscribo-config');
         }
     }
 }

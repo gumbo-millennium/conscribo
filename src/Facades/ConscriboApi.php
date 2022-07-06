@@ -13,6 +13,6 @@ class ConscriboApi extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'conscribo-api';
+        return 'conscribo';
     }
 }

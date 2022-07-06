@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes to `conscribo-api` will be documented in this file.
+All notable changes to `conscribo` will be documented in this file.

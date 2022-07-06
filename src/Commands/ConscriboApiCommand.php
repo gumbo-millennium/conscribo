@@ -8,7 +8,7 @@ use Illuminate\Console\Command;
 
 class ConscriboApiCommand extends Command
 {
-    public $signature = 'conscribo-api';
+    public $signature = 'conscribo';
 
     public $description = 'My command';
 

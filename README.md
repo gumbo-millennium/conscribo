@@ -1,9 +1,9 @@
 # Easy-to-use Conscribo API usage for membership sync
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/gumbo-millennium/conscribo-api.svg?style=flat-square)](https://packagist.org/packages/gumbo-millennium/conscribo-api)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gumbo-millennium/conscribo-api/run-tests?label=tests)](https://github.com/gumbo-millennium/conscribo-api/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/gumbo-millennium/conscribo-api/Check%20&%20fix%20styling?label=code%20style)](https://github.com/gumbo-millennium/conscribo-api/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/gumbo-millennium/conscribo-api.svg?style=flat-square)](https://packagist.org/packages/gumbo-millennium/conscribo-api)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/gumbo-millennium/conscribo.svg?style=flat-square)](https://packagist.org/packages/gumbo-millennium/conscribo)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/gumbo-millennium/conscribo/run-tests?label=tests)](https://github.com/gumbo-millennium/conscribo/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/gumbo-millennium/conscribo/Check%20&%20fix%20styling?label=code%20style)](https://github.com/gumbo-millennium/conscribo/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/gumbo-millennium/conscribo.svg?style=flat-square)](https://packagist.org/packages/gumbo-millennium/conscribo)
 
 Easily connect your Laravel website with your Conscribo administration. Import your users, divide them in groups to support different access levels, and apply committees as roles (using spatie/laravel-permission).
 
@@ -12,13 +12,13 @@ Easily connect your Laravel website with your Conscribo administration. Import y
 You can install the package via composer:
 
 ```bash
-composer require gumbo-millennium/conscribo-api
+composer require gumbo-millennium/conscribo
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="conscribo-api-config"
+php artisan vendor:publish --tag="conscribo-config"
 ```
 
 This is the contents of the published config file:
