@@ -15,7 +15,7 @@ migration:
   prefix: ''
 
 console:
-  namespace: Gumbo\Conscribo\Console
+  namespace: Gumbo\Conscribo\Commands
 
 model:
   namespace: Gumbo\Conscribo

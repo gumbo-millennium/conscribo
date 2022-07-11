@@ -9,26 +9,54 @@ Easily connect your Laravel website with your Conscribo administration. Import y
 
 ## Installation
 
-You can install the package via composer:
+The Conscribo API is available on [Packagist](https://packagist.org/packages/gumbo-millennium/conscribo).
+Installation via Composer is easy:
 
 ```bash
 composer require gumbo-millennium/conscribo
 ```
 
-You can publish the config file with:
+After installation, publish the config file:
 
 ```bash
 php artisan vendor:publish --tag="conscribo-config"
 ```
 
-This is the contents of the published config file:
+Next, add these three lines to your `.env.example` file, and configure
+them properly in your local `.env`:
 
-```php
-return [
-];
+```
+CONSCRIBO_ACCOUNT=
+CONSCRIBO_USERNAME=
+CONSCRIBO_PASSPHRASE=
 ```
 
+You can now test the connection using the `conscribo:authenticate` command.
+
+## Configuration
+
+To configure the API, you need to fetch the entity types from Conscribo and update your `config/conscribo.php` file.
+
+You can get a list of all entity types using `conscribo:list-entities`.
+Next, update the `resource` keys in all `objects` entries in your config to match one of the existing entity types.
+
+Next, fetch the field names for all entity types you want to use. This is done by calling `conscribo:entity-fields <entity-type>`.
+
+Update the `fields` in all `objects` entries in your config to match the field names you got and want to receive in your application.
+
+Now your connection is optimized and ready to use.
+
 ## Usage
+
+The easiest use is using the `Conscribo` facade. This facade can list and search for users (optionally with groups) and for committees.
+
+```php
+use Gumbo\Conscribo\Facades\Conscribo;
+
+Conscribo::findUser($user->id);
+Conscribo::searchUser([
+    'email' => $user->email,
+]);
 
 ```php
 $conscriboApi = new Gumbo\ConscriboApi();

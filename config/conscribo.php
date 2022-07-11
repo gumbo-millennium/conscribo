@@ -3,29 +3,35 @@
 declare(strict_types=1);
 
 return [
+    /**
+     * Account name, used for all calls to the API
+     */
+    'account' => env('CONSCRIBO_ACCOUNT'),
+
+    /**
+     * Authentication information, used when no session is present.
+     */
     'auth' => [
-        'account' => env('CONSCRIBO_ACCOUNT'),
         'username' => env('CONSCRIBO_USERNAME'),
         'passphrase' => env('CONSCRIBO_PASSPHRASE'),
     ],
 
+    /**
+     * Object definitions, used to request the correct fields from the API
+     */
     'objects' => [
         'user' => [
-            'model' => App\User::class,
             'resource' => 'persoon',
             'fields' => [
-                'id' => 'conscribo_id',
-                // further fields to auto-apply to the user model
+                'code',
             ],
         ],
 
         'group' => [
-            'model' => App\Group::class,
             'resource' => 'orgaan',
             'fields' => [
-                'id' => 'conscribo_id',
-                'naam' => 'name',
-                // further fields to auto-apply to the group model
+                'code',
+                'naam',
             ],
         ],
     ],

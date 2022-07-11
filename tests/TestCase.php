@@ -6,6 +6,7 @@ namespace Gumbo\Conscribo\Tests;
 
 use Gumbo\Conscribo\ConscriboServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\Config;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
@@ -28,11 +29,6 @@ abstract class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_conscribo_table.php.stub';
-        $migration->up();
-        */
+        Config::set('database.default', 'testing');
     }
 }
